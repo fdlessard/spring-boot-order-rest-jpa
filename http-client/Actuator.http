@@ -1,0 +1,11 @@
+###
+# @name Actuator
+GET http://localhost:8080/actuator
+
+###
+# @name Info
+GET http://localhost:8080/actuator/info
+
+###
+# @name Health
+GET http://localhost:8080/actuator/health

@@ -1,0 +1,42 @@
+###
+# @name  Orders
+GET http://localhost:8080/orders
+
+###
+# @name  Order 1
+GET http://localhost:8080/orders/3
+
+###
+# @name  Order Items
+GET http://localhost:8080/order-items
+
+###
+# @name  Order Item 1
+GET http://localhost:8080/order-items/1
+
+
+###
+# @name  Create Order
+POST http://localhost:8080/orders
+
+
+{
+  "name": "Order Test Post",
+  "description":  "Order Test Post Description"
+}
+
+###
+# @name  Create Order
+POST http://localhost:8080/order-items
+
+{
+  "name": "Order Item Test Post",
+  "quantity":  12,
+  "order": "order/1"
+}
+
+
+
+
+
+
